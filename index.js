@@ -11,8 +11,8 @@
 *       3) 'HostedZoneId:type:record-name:ttl'  Ex. Z1473BHDWSM6GV:CNAME:www.example.com:30)'   
 *       4) <empty string> or value of 'none' are ignored
 
-*    By Peter R Jones https://github.com/PeterRJones/
-*    Heavily influenced by: https://github.com/30mhz/autoscaling-route53-lambda
+*    By Peter Jones https://github.com/PeterRJones/
+*    Heavily influenced and inspired by: https://github.com/30mhz/autoscaling-route53-lambda
 *
 * TODO:
 * - how to allow for hosted zone name as well as id. ex: example.com:CNAME:www.example.com
