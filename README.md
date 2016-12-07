@@ -36,6 +36,7 @@ And now, scale :)
 If you want to script this setup with Cloudformation, here is a snippet that covers steps 3 - 7 above.
 This snippet would be put into the 'Resources' of a Cloudformation script.
 
+```
 "Resources": {
 
   ....
@@ -82,5 +83,4 @@ This snippet would be put into the 'Resources' of a Cloudformation script.
         }
     }
   .....
-
-
+```
