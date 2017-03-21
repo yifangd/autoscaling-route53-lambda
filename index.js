@@ -43,7 +43,7 @@ exports.handler = function(inEvent, context) {
     var cause   = message.Cause;
 
     var useDNSNames     = false;
-    var isPrivate       = false;
+    var isPrivate       = true;
 
     var route53Tags = {
             HostedZoneId: '',
@@ -155,7 +155,8 @@ exports.handler = function(inEvent, context) {
             //  next(getZoneError);
             // } else {
                 // Determine if we are internal or public zone and set isPrivate accordingly
-                isPrivate = data.HostedZone.Config.PrivateZone;
+                // 2017/03, Yifang Dai, hack to force private IPs only
+                //isPrivate = data.HostedZone.Config.PrivateZone;
             // }
 
             next(null, route53Tags);
